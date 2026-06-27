@@ -1,0 +1,21 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /tunamoi
+
+spring:
+  profiles:
+    active: dev
+  jpa:
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: org.postgresql.Driver

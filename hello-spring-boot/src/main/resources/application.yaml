@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context_path: /tuna
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/test_hoc"
+    username: root
+    password: Tuananhqp2005@
+    driver-class-name:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "87561e08b0ce04c0a84f746d3fb370c0823cd3f99c9dbd7bb582792b088a2520"
+  valid-duration: 3600 # in second
+  refreshable-duration: 360000  # in seconds
